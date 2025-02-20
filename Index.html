@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth-container">
+        <h2>Login / Signup</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="signup()">Create Account</button>
+        <button onclick="login()">Login</button>
+        <p id="message"></p>
+    </div>
+
+    <div id="shop-container" style="display:none;">
+        <h2>Dog Shop</h2>
+        <div class="dog-list">
+            <div class="dog-item">
+                <img src="https://placedog.net/300/200" alt="Dog 1">
+                <p>Golden Retriever - $500</p>
+                <button onclick="buyDog('Golden Retriever', 500)">Buy</button>
+            </div>
+            <div class="dog-item">
+                <img src="https://placedog.net/301/200" alt="Dog 2">
+                <p>Husky - $700</p>
+                <button onclick="buyDog('Husky', 700)">Buy</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
